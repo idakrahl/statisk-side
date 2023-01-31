@@ -91,13 +91,14 @@ h1 {
 }
 .size {
   margin-left: -30%;
-  margin-right: 111%;
+  margin-right: 96.5%;
   padding: 2%;
   background-color: #53474190;
   border-radius: 10%;
   color: white;
   font-weight: lighter;
   font-size: 20px;
+  text-align: center;
 }
 .size:hover {
   color: rgba(0, 0, 0, 0.276);
@@ -105,10 +106,11 @@ h1 {
 .basket {
   background-color: #53474190;
   color: white;
-  margin-right: 55%;
+  margin-right: 48%;
   text-align: center;
   padding: 0.5em;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
+  font-size: 20px;
 }
 .basket:hover {
   transform: scale(1.1);
