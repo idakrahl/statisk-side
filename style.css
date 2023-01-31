@@ -1,0 +1,161 @@
+@font-face {
+  font-family: BodoniBold;
+  src: url(Bodoni_Bold/Bodoni_Bold.otf);
+}
+nav {
+  list-style: none;
+  display: flex;
+  margin-top: 2%;
+}
+li {
+  margin-left: 2%;
+}
+
+li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #534741;
+}
+li a:hover {
+  color: #5347417e;
+  font-style: italic;
+}
+.titel {
+  width: 18%;
+  margin-left: 41%;
+  margin-top: -1.5%;
+}
+.titel:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+.margin_main {
+  padding-left: 7%;
+  margin-top: 4%;
+}
+.baggrund {
+  background-image: url(imgs/baggrund.png);
+  background-size: cover;
+}
+h1 {
+  font-family: BodoniBold;
+  color: #534741;
+}
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_1-1-1 img {
+  max-width: 70%;
+}
+.grid_1-1-1 img:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+.grid_1-1-1_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5%;
+}
+.grid_1-1-1_2 img {
+  max-width: 70%;
+}
+.grid_1-1-1_2 img:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+.undertekst {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 0.75em;
+}
+.underkategori {
+  color: rgb(180, 180, 180);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.r_m {
+  text-decoration: underline;
+  color: black;
+}
+.sko {
+  max-width: 70%;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #534741;
+}
+.size {
+  margin-left: -30%;
+  margin-right: 111%;
+  padding: 2%;
+  background-color: #53474190;
+  border-radius: 10%;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.size:hover {
+  color: rgba(0, 0, 0, 0.276);
+}
+.basket {
+  background-color: #53474190;
+  color: white;
+  margin-right: 55%;
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 8%;
+}
+.basket:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+.product_information {
+  font-size: smaller;
+}
+.puma {
+  margin-left: 7.5%;
+  color: #534741;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: light;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: -0.5%;
+}
+.line {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2.25%;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+
+  word-spacing: 1em;
+  margin-bottom: -2.25%;
+  margin-top: 2%;
+}
+.line a {
+  color: #534741;
+}
+.line u:hover {
+  color: #5347417e;
+}
+.line2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 74%;
+  margin-bottom: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  word-spacing: 1em;
+  margin-top: 5%;
+}
+.line2 a {
+  color: #534741;
+}
+.line2 u:hover {
+  color: #5347417e;
+  font-style: italic;
+}
