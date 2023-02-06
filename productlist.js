@@ -8,11 +8,13 @@ getData();
 
 function showProducts(products) {
   const template = document.querySelector("#template").content;
-
   const copy = template.cloneNode(true);
 
   copy.querySelector("h3").textContent = products.productdisplayname;
-  copy.querySelector(".pris").textContent = products.price;
+  copy.querySelector(".pris2").textContent = products.price;
+  copy.querySelector(".discount").textContent = products.discount;
+  copy.querySelector(".brand").textContent = products.brandname;
+  copy.querySelector(".kategori").textContent = products.subcategory;
   copy.querySelector(".sko").src = `https://kea-alt-del.dk/t7/images/webp/640/${products.id}.webp`;
   if (products.soldout) {
     copy.querySelector("article").classList.add("soldOut");

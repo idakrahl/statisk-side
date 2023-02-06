@@ -17,9 +17,15 @@ function visProdukt(produkt) {
   document.querySelector(".i_number").textContent = produkt.id;
   document.querySelector(".pris").textContent = "DDK " + produkt.price + ",-";
   document.querySelector(".wear").textContent = produkt.subcategory;
+  document.querySelector(".step3").textContent = produkt.subcategory;
+  document.querySelector(".step4").textContent = produkt.brandname;
+  document.querySelector(".option_0").textContent = "2XS";
   document.querySelector(".option_1").textContent = "XS";
   document.querySelector(".option_2").textContent = "S";
   document.querySelector(".option_3").textContent = "M";
+  document.querySelector(".option_4").textContent = "L";
+  document.querySelector(".option_5").textContent = "XL";
+  document.querySelector(".option_6").textContent = "2XL";
 }
 
 hentData();
