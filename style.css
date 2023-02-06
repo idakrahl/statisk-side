@@ -32,8 +32,10 @@ li a:hover {
   opacity: 50%;
 }
 .margin_main {
-  padding-left: 7%;
-  margin-top: 4%;
+  padding-left: 25%;
+}
+.margin_main2 {
+  padding-left: 10%;
 }
 .baggrund {
   background-image: url(imgs/baggrund.png);
@@ -47,9 +49,10 @@ h1 {
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 4%;
 }
 .grid_1-1-1 img {
-  max-width: 70%;
+  max-width: 80%;
   margin-left: 0%;
 }
 .grid_1-1-1 img:hover {
@@ -62,6 +65,7 @@ h1 {
 .undertekst {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1em;
+  margin-right: 20%;
 }
 
 .underkategori {
@@ -134,7 +138,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   word-spacing: 1em;
-  margin-bottom: -2.25%;
+  margin-bottom: 2%;
   margin-top: 5%;
 }
 .line a {
@@ -145,12 +149,12 @@ h1 {
 }
 .line2 {
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 74%;
+  margin-left: 78%;
   margin-bottom: 4%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   word-spacing: 1em;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 .line2 a {
   color: #534741;
@@ -174,18 +178,19 @@ h1 {
 .soldOut img {
   opacity: 50%;
 }
+
 .soldOut::after {
   content: "SOLD OUT";
+  position: relative;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: 16px;
-  margin-top: 5%;
-  margin-left: -190%;
-  color: black;
-  text-align: center;
-
-  padding: 0.5em;
+  background-color: #534741;
+  color: white;
+  padding: 0.25em;
+  top: -92.5%;
+  left: 53%;
 }
+
 .sale {
   display: none;
 }
