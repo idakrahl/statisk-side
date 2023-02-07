@@ -24,7 +24,7 @@ li a:hover {
 }
 .titel {
   width: 20%;
-  margin-left: 42%;
+  margin-left: 40%;
   margin-top: 2%;
 }
 .titel:hover {
@@ -32,13 +32,13 @@ li a:hover {
   opacity: 50%;
 }
 .margin_main {
-  padding-left: 25%;
+  margin-left: 22%;
 }
 .margin_main2 {
-  padding-left: 10%;
+  margin-left: 10%;
 }
 .margin_main3 {
-  padding-left: 10%;
+  margin-left: 9%;
   margin-top: 7%;
 }
 .baggrund {
@@ -205,11 +205,21 @@ h1 {
   display: none;
 }
 .style {
-  color: red;
+  color: #534741;
 }
 .sale_tekst {
-  background-color: red;
+  background-color: #534741;
+  color: white;
   padding: 0.25em;
+}
+.overskrift {
+  margin-left: 7.5%;
+  margin-bottom: 2.5%;
+  font-size: 45px;
+}
+.categories {
+  font-size: 45px;
+  margin-top: -3%;
 }
 @media screen and (max-width: 1100px) {
   .baggrund {

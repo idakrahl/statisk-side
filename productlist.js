@@ -1,9 +1,16 @@
-async function getData() {
-  const response = await fetch("https://kea-alt-del.dk/t7/api/products?limit=50");
-  const data = await response.json();
+const urlParams = new URLSearchParams(window.location.search);
+const cat = urlParams.get("cat");
+const url = `https://kea-alt-del.dk/t7/api/products?limit=50&category=${cat}`;
 
+async function getData() {
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data);
   data.forEach(showProducts);
 }
+
+document.querySelector(".overskrift").textContent = cat;
+
 getData();
 
 function showProducts(products) {
