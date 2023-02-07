@@ -12,15 +12,13 @@ function showProducts(products) {
 
   copy.querySelector("h3").textContent = products.productdisplayname;
   copy.querySelector(".pris2").textContent = products.price;
+  copy.querySelector(".belob").textContent = Math.round(products.price - (products.price * products.discount) / 100);
   copy.querySelector(".discount").textContent = products.discount;
   copy.querySelector(".brand").textContent = products.brandname;
   copy.querySelector(".kategori").textContent = products.subcategory;
   copy.querySelector(".sko").src = `https://kea-alt-del.dk/t7/images/webp/640/${products.id}.webp`;
   if (products.soldout) {
     copy.querySelector("article").classList.add("soldOut");
-  }
-  if (products.discount) {
-    copy.querySelector("article").classList.add("onSale");
   }
   if (products.discount) {
     copy.querySelector(".sale").classList.remove("sale");
