@@ -204,7 +204,9 @@ h1 {
 .sale3 {
   display: none;
 }
-
+.style {
+  color: red;
+}
 .sale_tekst {
   background-color: red;
   padding: 0.25em;
