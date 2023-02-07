@@ -1,5 +1,5 @@
 async function getData() {
-  const response = await fetch("https://kea-alt-del.dk/t7/api/products?limit=10");
+  const response = await fetch("https://kea-alt-del.dk/t7/api/products?limit=50");
   const data = await response.json();
 
   data.forEach(showProducts);
@@ -17,18 +17,16 @@ function showProducts(products) {
   copy.querySelector(".brand").textContent = products.brandname;
   copy.querySelector(".kategori").textContent = products.subcategory;
   copy.querySelector(".sko").src = `https://kea-alt-del.dk/t7/images/webp/640/${products.id}.webp`;
+  copy.querySelector("a").href = "product.html?id=" + products.id;
   if (products.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
   if (products.discount) {
     copy.querySelector(".sale").classList.remove("sale");
-  }
-  if (products.discount) {
     copy.querySelector(".sale2").classList.remove("sale2");
-  }
-  if (products.discount) {
     copy.querySelector(".sale3").classList.remove("sale3");
   }
+
   document.querySelector("main").appendChild(copy);
 }
 /*
