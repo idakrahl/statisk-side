@@ -51,7 +51,7 @@ li a:hover {
   margin-top: 10%;
 }
 .baggrund {
-  background-image: url(imgs/baggrund.png);
+  background-image: url(imgs/baggrund.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -241,83 +241,71 @@ h1 {
   font-size: 45px;
   margin-top: -3%;
 }
+
 @media screen and (max-width: 1100px) {
   .baggrund {
-    background-image: url(imgs/bg.png);
+    background-image: url(imgs/bg.webp);
     background-repeat: no-repeat;
   }
   .titel {
-    width: 40%;
+    width: 50%;
     margin-bottom: 7%;
     margin-top: 3%;
+    margin-left: 27%;
   }
-  ul {
+  nav ul {
     display: flex;
-    margin-left: -12%;
+    margin-left: -4%;
   }
-  li {
-    margin-left: 13%;
+  nav li {
+    margin-right: 2.5%;
   }
-  li a {
+  nav li a {
     font-size: 11px;
     color: #534741b1;
   }
   .grid_1-1-1 {
     grid-template-columns: 1fr;
     width: 75%;
-    border: solid 0.5px #53474159;
-    border-radius: 2%;
-    margin-bottom: 5%;
-    padding-top: 1%;
   }
-  .grid_1-1-1 img {
-    margin-bottom: -7%;
-    margin-left: 5%;
-    border-radius: 2%;
-  }
-  .line2 {
-    display: none;
+  .back a {
+    margin-top: -5%;
+    margin-left: 6%;
+    font-size: 15px;
+    color: #534741a5;
   }
   .categories {
     margin-top: 7%;
     margin-left: 25%;
+    font-size: 30px;
   }
-  .grid_1-1-1_2 {
-    grid-template-columns: 1fr;
-  }
-  .grid_1-1-1_2 img {
-    max-width: 60%;
-    margin-top: 10%;
-    margin-left: 15%;
+
+  .under_categories a {
+    font-size: 15px;
+    margin-bottom: 2%;
+    margin-right: 0%;
   }
   .grid_1-1-1 {
     grid-template-columns: 1fr;
-    margin-left: 10%;
-  }
-  .grid2_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .grid2_1-1-1 img {
-    max-width: 90%;
-    margin-bottom: 5%;
+    margin-left: 7%;
   }
   .grid_1-1-1 img {
     max-width: 90%;
     margin-bottom: 5%;
   }
+  .overskrift {
+    margin-left: 8%;
+    margin-bottom: 10%;
+    font-size: 30px;
+  }
   .undertekst {
     margin-top: -7%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     text-align: center;
     font-size: smaller;
-    margin-left: -7%;
+    margin-right: 10%;
+    border: #5347413d solid 1px;
   }
-
-  .grid2_1-1 {
-    display: block;
-  }
-
   .grid_1-1 {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -325,6 +313,14 @@ h1 {
   }
   .grid_1-1 h1 {
     font-size: 20px;
+  }
+  .line {
+    font-size: 10px;
+    margin-left: 7%;
+    color: #5347418e;
+  }
+  .line a {
+    color: #5347418e;
   }
   .info {
     margin-left: -20%;
@@ -334,27 +330,36 @@ h1 {
     max-width: 90%;
     margin-left: -8%;
   }
+  .underkategori {
+    font-size: 14px;
+  }
+  .pris {
+    font-size: 18px;
+  }
   .size {
     grid-row: 2/2;
     margin-left: 2%;
-    margin-right: 30%;
+    margin-right: 35%;
     text-align: center;
     margin-bottom: 45%;
-    margin-top: -15%;
-    font-size: 16px;
+    margin-top: -12%;
+    font-size: 12px;
   }
   .choose {
     font-size: 16px;
     margin-bottom: -50%;
+    margin-right: -3%;
   }
   .basket {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    margin-right: 5%;
-    margin-top: -10%;
+    margin-right: 16%;
+    padding: 0.6em;
+    margin-top: -7%;
     margin-bottom: 30%;
   }
   .product_information {
+    font-size: 11px;
     margin-left: -160%;
   }
   .puma {

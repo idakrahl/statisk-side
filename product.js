@@ -21,7 +21,7 @@ function visProdukt(produkt) {
   document.querySelector(".wear").textContent = produkt.subcategory;
   document.querySelector(".step3").textContent = produkt.subcategory;
   document.querySelector(".step4").textContent = produkt.brandname;
-  if (produkt.subcategory === "Topwear") {
+  if (produkt.category === "Apparel") {
     document.querySelector(".option_0").textContent = "2XS";
     document.querySelector(".option_1").textContent = "XS";
     document.querySelector(".option_2").textContent = "S";
@@ -30,7 +30,7 @@ function visProdukt(produkt) {
     document.querySelector(".option_5").textContent = "XL";
     document.querySelector(".option_6").textContent = "2XL";
   }
-  if (produkt.subcategory === "Headwear") {
+  if (produkt.category === "Accessories") {
     document.querySelector(".option_0").textContent = "Onesize";
     document.querySelector(".option_1").textContent = "";
     document.querySelector(".option_2").textContent = "";
@@ -39,7 +39,16 @@ function visProdukt(produkt) {
     document.querySelector(".option_5").textContent = "";
     document.querySelector(".option_6").textContent = "";
   }
-  if (produkt.subcategory === "Bags") {
+  if (produkt.category === "Personal Care") {
+    document.querySelector(".option_0").textContent = "Onesize";
+    document.querySelector(".option_1").textContent = "";
+    document.querySelector(".option_2").textContent = "";
+    document.querySelector(".option_3").textContent = "";
+    document.querySelector(".option_4").textContent = "";
+    document.querySelector(".option_5").textContent = "";
+    document.querySelector(".option_6").textContent = "";
+  }
+  if (produkt.category === "Sporting Goods") {
     document.querySelector(".option_0").textContent = "Onesize";
     document.querySelector(".option_1").textContent = "";
     document.querySelector(".option_2").textContent = "";
