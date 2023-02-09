@@ -17,10 +17,13 @@ function visProdukt(produkt) {
   document.querySelector(".underkategori").textContent = produkt.brandname;
   document.querySelector(".gender").textContent = produkt.gender;
   document.querySelector(".i_number").textContent = produkt.id;
-  document.querySelector(".pris").textContent = "DDK " + produkt.price + ",-";
+  document.querySelector(".pris").textContent = "DKK " + produkt.price + ",-";
   document.querySelector(".wear").textContent = produkt.subcategory;
   document.querySelector(".step3").textContent = produkt.subcategory;
   document.querySelector(".step4").textContent = produkt.brandname;
+  if (produkt.discount) {
+    document.querySelector(".pris").textContent = "DKK " + Math.round(produkt.price - (produkt.price * produkt.discount) / 100) + ",-";
+  }
   if (produkt.category === "Apparel") {
     document.querySelector(".option_0").textContent = "2XS";
     document.querySelector(".option_1").textContent = "XS";
